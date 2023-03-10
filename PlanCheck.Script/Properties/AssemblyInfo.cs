@@ -9,9 +9,9 @@ using System.Resources;
 [assembly: AssemblyTitle("Plan Check Script")]
 [assembly: AssemblyDescription("Binary plugin script generates a plan quality report and plan checkfor selected plan or plansum")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Landon Clark")]
+[assembly: AssemblyCompany("Original: Landon Clark, Modified by: Rainor Connor")]
 [assembly: AssemblyProduct("Eclipse Scripting")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyCopyright("2023 creation")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

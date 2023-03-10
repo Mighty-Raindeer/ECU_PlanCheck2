@@ -40,7 +40,9 @@
                 </i:Interaction.Triggers>
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding PlanIdWithFractionation}"/>
+                        <TextBlock 
+                            Text="{Binding PlanIdWithFractionation}"
+                            Foreground="White"/>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
                 <ListBox.GroupStyle>

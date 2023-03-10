@@ -111,9 +111,9 @@ namespace PlanCheck
 
                 foreach (Structure structure in structureSet.Structures)
                 {
-                    if (structure.StructureCode != null)
+                    if (structure.StructureCodeInfos != null)
                     {
-                        if (structure.StructureCode.Code.ToUpper().Contains("BODY"))
+                        if (structure.StructureCodeInfos.ToString().Contains("BODY"))
                         {
                             body = structure;
                             break;
@@ -135,9 +135,9 @@ namespace PlanCheck
 
                 foreach (Structure structure in structureSet.Structures)
                 {
-                    if (structure.StructureCode != null)
+                    if (structure.StructureCodeInfos != null)
                     {
-                        if (structure.StructureCode.Code.ToUpper().Contains("SUPPORT"))
+                        if (structure.StructureCodeInfos.ToString().Contains("SUPPORT"))
                         {
                             couch = structure;
                             break;

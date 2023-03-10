@@ -28,7 +28,10 @@ namespace PlanCheck
         public string TargetVolumeId { get; set; }
         public double DoseMax3D { get; set; }
         public VVector DoseMax3DLocation { get; set; }
+        public ReferencePoint PrimaryReferencePoint { get; set; }
         public Beam[] Beams { get; set; }
+
+        public PatientOrientation TreatmentOrientation { get; set; }
 
         public PlanningItemViewModel(PlanningItem planningItem)
         {
@@ -52,6 +55,8 @@ namespace PlanCheck
                 TargetVolumeId = planSetup.TargetVolumeID;
                 TotalDose = planSetup.TotalDose.Dose;
                 IsDoseValid = planSetup.IsDoseValid;
+                TreatmentOrientation = planSetup.TreatmentOrientation;
+                PrimaryReferencePoint = planSetup.PrimaryReferencePoint;
                 if (IsDoseValid)
                 {
                     DoseMax3D = planSetup.Dose.DoseMax3D.Dose;

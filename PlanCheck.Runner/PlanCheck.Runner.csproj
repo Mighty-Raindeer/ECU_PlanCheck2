@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -56,11 +56,11 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CommandLine, Version=2.5.0.0, Culture=neutral, PublicKeyToken=5a870481e358d379, processorArchitecture=MSIL">
-      <HintPath>..\packages\CommandLineParser.2.5.0\lib\net461\CommandLine.dll</HintPath>
+    <Reference Include="CommandLine, Version=2.9.1.0, Culture=neutral, PublicKeyToken=5a870481e358d379, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommandLineParser.2.9.1\lib\net461\CommandLine.dll</HintPath>
     </Reference>
-    <Reference Include="CommonServiceLocator, Version=2.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\CommonServiceLocator.2.0.4\lib\net46\CommonServiceLocator.dll</HintPath>
+    <Reference Include="CommonServiceLocator, Version=2.0.6.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.2.0.6\lib\net46\CommonServiceLocator.dll</HintPath>
     </Reference>
     <Reference Include="EsapiEssentials, Version=2.0.0.0, Culture=neutral, processorArchitecture=AMD64">
       <HintPath>..\packages\EsapiEssentials.2.0.0\lib\net45\EsapiEssentials.dll</HintPath>
@@ -106,8 +106,8 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="YamlDotNet, Version=6.0.0.0, Culture=neutral, PublicKeyToken=ec19458f3c15af5e, processorArchitecture=MSIL">
-      <HintPath>..\packages\YamlDotNet.6.1.1\lib\net45\YamlDotNet.dll</HintPath>
+    <Reference Include="YamlDotNet, Version=13.0.0.0, Culture=neutral, PublicKeyToken=ec19458f3c15af5e, processorArchitecture=MSIL">
+      <HintPath>..\packages\YamlDotNet.13.0.0\lib\net45\YamlDotNet.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

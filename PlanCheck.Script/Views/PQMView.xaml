@@ -37,12 +37,12 @@
                         Text="Plan Quality Metrics (PQM)" 
                         Grid.ColumnSpan="3"  />
             <ComboBox
-                Grid.Column="1"
                 x:Name="ConstraintComboBox" 
                 ItemsSource="{Binding Source={StaticResource Constraints}}"
                 SelectedItem="{Binding SelectedConstraint, NotifyOnSourceUpdated=True, Mode=TwoWay}"
                 Background="#FF2B2B2B"
-                BorderBrush="Black">
+                Foreground="Black"
+                BorderBrush="Black" Grid.ColumnSpan="2" Margin="444,0,0,0">
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="SourceUpdated">
                         <i:InvokeCommandAction Command="{Binding AnalyzePlanCommand}" />
@@ -56,7 +56,7 @@
                 <ComboBox.Resources>
                     <Style TargetType="ComboBoxItem">
                         <Setter Property="Background" Value="#FF2B2B2B" />
-                        <Setter Property="Foreground" Value="LightGray" />
+                        <Setter Property="Foreground" Value="White" />
                         <Setter Property="BorderBrush" Value="Black" />
                     </Style>
                 </ComboBox.Resources>
@@ -79,7 +79,7 @@
                     RowHeight="23"
                     ColumnWidth="*"
                     Background="Black"
-                    Foreground="LightGray">
+                    Foreground="White">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="TemplateId" Binding="{Binding TemplateId}" Width="4*"/>
                 <DataGridTemplateColumn Header="FoundStructure" SortMemberPath="Structure.StructureName" Width="5*">
